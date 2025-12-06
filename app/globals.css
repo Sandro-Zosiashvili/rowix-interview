@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  list-style: none;
+  background-color: black;
+}
+/*html::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

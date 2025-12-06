@@ -1,0 +1,86 @@
+
+.shuffle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3404vw;
+  width: 10.8918vw;
+  height: 3.4037vw;
+  color: #7ff09b;
+  border: 2px solid #7ff09b;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: unset;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2253vw;
+
+
+
+}
+
+.upload:hover {
+  outline: none;
+  border: 2px solid #93f3a9;
+}
+
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3404vw;
+  width: 10.8918vw;
+  height: 3.4037vw;
+  font-size: 1.2253vw;
+  color: #b569e8;
+  border: 2px solid #b569e8;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: unset;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+
+
+
+}
+
+.preview:hover {
+  outline: none;
+  border: 2px solid #b569e8;
+}
+
+
+.upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3404vw;
+  width: 10.8918vw;
+  height: 3.4037vw;
+  font-size: 1.2253vw;
+  color: #ec4646;
+  border: 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: unset;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+
+
+
+}
+
+.upload:hover {
+  outline: none;
+  border: 2px solid #ec4646;
+}
+
+
+.icon {
+  width: 1.6338vw;
+  height: 1.6338vw;
+}
