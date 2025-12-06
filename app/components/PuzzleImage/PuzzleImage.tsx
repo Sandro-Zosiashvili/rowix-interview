@@ -4,7 +4,7 @@ import {useState, useEffect} from "react";
 
 
 interface Props {
-    image: any;
+    image: string | undefined;
     shuffled: boolean;
     isShuffled: boolean;
 }
@@ -15,10 +15,10 @@ const PuzzleImage = (props: Props) => {
 
 
     useEffect(() => {
-        const newPices =  [0, 1, 2, 3, 4, 5, 6, 7, 8].sort(() => Math.random() - 0.5);
-      setPieces(newPices)
+        const newPices = [0, 1, 2, 3, 4, 5, 6, 7, 8].sort(() => Math.random() - 0.5);
+        setPieces(newPices)
 
-    },[props.isShuffled]);
+    }, [props.isShuffled]);
 
     const dragStart = (i: number) => {
         setDragging(i);
@@ -47,7 +47,7 @@ const PuzzleImage = (props: Props) => {
 
                 props.shuffled ?
                     <div className={styles.unShuffledImage}>
-                            <img src={props.image} alt={props.image.name} />
+                        <img className={styles.containerPreview} src={props.image} alt={props.image} />
                     </div> :
 
                     <div className={styles.puzleContainer}>
@@ -61,7 +61,8 @@ const PuzzleImage = (props: Props) => {
                                 style={{
                                     width: '133px',
                                     height: '133px',
-                                    background: `url(${props.image}) -${(num % 3) * 133}px -${Math.floor(num / 3) * 133}px`,
+                                    backgroundImage: `url(${props.image})`,
+                                    backgroundPosition: `-${(num % 3) * 133}px -${Math.floor(num / 3) * 133}px`,
                                     backgroundSize: '400px 400px',
                                     cursor: 'grab',
                                     opacity: dragging === i ? 0.3 : 1

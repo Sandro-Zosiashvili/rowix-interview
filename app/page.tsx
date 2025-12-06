@@ -6,7 +6,7 @@ import styles from './page.module.scss'
 import {useState} from "react";
 
 export default function Home() {
-    const [loadedImage, setLoadedImage] = useState<string>("");
+    const [loadedImage, setLoadedImage] = useState<string | undefined>();
     const [preview, setPreview] = useState(true);
     const [isShuffled, setShuffled] = useState(false);
 
